@@ -144,6 +144,7 @@ span.logo {
 .menu__element {
   display: inline-block;
 }
+
 .menu__element a {
   font-size: 20px;
   font-weight: 700;
@@ -152,6 +153,7 @@ span.logo {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 .menu__element a:hover {
   color: #ffc600;
   cursor: pointer;
@@ -168,7 +170,7 @@ span.logo {
 }
 
 .welcome__photo {
-  background: url(/images/together-big.jpg) no-repeat center center fixed;
+  background: url(../images/together-big.jpg) no-repeat center center fixed;
   background-size: cover;
   z-index: 0;
 }
@@ -196,14 +198,17 @@ span.logo {
   opacity: 0;
   z-index: 1;
 }
+
 .welcome__headline h2 {
   font-size: 50px;
 }
+
 .welcome__headline p {
   font-size: 20px;
   color: #c5c5c5;
   margin-bottom: 20px;
 }
+
 .welcome__headline a {
   font-size: 20px;
   color: white;
@@ -269,6 +274,7 @@ span.logo {
   grid-gap: 40px 60px;
   margin-top: 40px;
 }
+
 #projects button {
   grid-column: 1/-1;
   -ms-grid-column-align: center;
@@ -288,10 +294,11 @@ span.logo {
   -ms-grid-columns: 150px 1fr 1fr 1fr 150px;
   grid-template-columns: 150px 1fr 1fr 1fr 150px;
   position: relative;
-  background: url(/images/together-big.jpg) no-repeat center center fixed;
+  background: url(../images/together-big.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 300px;
 }
+
 #reviews h3 {
   grid-column: 2/-2;
   -ms-grid-column-align: center;
@@ -338,6 +345,7 @@ span.logo {
   grid-template-areas: "title title title";
   grid-gap: 20px;
 }
+
 #gallery h3 {
   grid-column: title;
   -ms-grid-column-align: center;
@@ -362,7 +370,7 @@ span.logo {
   -ms-grid-columns: 150px 1fr 1fr 1fr 1fr 150px;
   grid-template-columns: 150px 1fr 1fr 1fr 1fr 150px;
   position: relative;
-  background: url(/images/together-big.jpg) no-repeat center center fixed;
+  background: url(../images/together-big.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -386,12 +394,15 @@ span.logo {
   margin: 50px 0;
   z-index: 1;
 }
+
 .features__content div {
   text-align: center;
 }
+
 .features__content h4 {
   color: white;
 }
+
 .features__content p {
   color: #c5c5c5;
 }
@@ -412,6 +423,7 @@ span.logo {
   justify-self: center;
   text-align: center;
 }
+
 .contact__header h3 {
   text-transform: uppercase;
 }
@@ -425,6 +437,7 @@ span.logo {
   -ms-grid-column-align: center;
   justify-self: center;
 }
+
 .contact__path h4 {
   text-transform: uppercase;
   margin-bottom: 0;
@@ -460,6 +473,7 @@ span.logo {
   justify-self: center;
   width: 50%;
 }
+
 .contact__form input {
   color: #c5c5c5;
   border: 1px solid #272727;
@@ -504,12 +518,14 @@ footer {
   grid-template-columns: auto 1fr;
   background-color: #272727;
 }
+
 footer .logo {
   color: white;
   word-break: keep-all;
   margin-bottom: 0;
   padding-top: 10px;
 }
+
 footer p {
   -ms-grid-column-align: end;
   justify-self: end;
@@ -562,7 +578,7 @@ footer p {
     grid-template-columns: 1fr;
     -ms-grid-rows: auto 0 1fr;
     grid-template-rows: auto 1fr;
-    grid-template-areas: "photo" "content";
+    grid-template-areas: "photo""content";
     grid-gap: 0;
   }
 
@@ -592,7 +608,7 @@ footer p {
     grid-template-columns: 1fr;
     -ms-grid-rows: auto 0 1fr;
     grid-template-rows: auto 1fr;
-    grid-template-areas: "photo" "content";
+    grid-template-areas: "photo""content";
     grid-gap: 0;
   }
 
@@ -627,6 +643,7 @@ footer p {
     margin-right: 50px;
   }
 }
+
 @media (max-width: 375px) {
   .logo-container {
     margin-left: 20px;
@@ -671,12 +688,12 @@ footer p {
     grid-template-rows: auto 1fr;
   }
 
-  #reviews > *:nth-child(1) {
+  #reviews>*:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  #reviews > *:nth-child(2) {
+  #reviews>*:nth-child(2) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
@@ -688,17 +705,17 @@ footer p {
     grid-template-rows: repeat(3, 1fr);
   }
 
-  .reviews__content > *:nth-child(1) {
+  .reviews__content>*:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .reviews__content > *:nth-child(2) {
+  .reviews__content>*:nth-child(2) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
 
-  .reviews__content > *:nth-child(3) {
+  .reviews__content>*:nth-child(3) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
@@ -752,12 +769,12 @@ footer p {
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .contact__path > *:nth-child(1) {
+  .contact__path>*:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .contact__path > *:nth-child(2) {
+  .contact__path>*:nth-child(2) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
