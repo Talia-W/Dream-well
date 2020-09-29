@@ -207,6 +207,7 @@ span.logo {
 
     h2 {
         font-size: 50px;
+        text-align: center;
     }
 
     p {
@@ -217,8 +218,14 @@ span.logo {
 
     a {
         font-size: 20px;
+        font-weight: 700;
         color: white;
         cursor: pointer;
+        padding: 15px 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid #ffc600;
+        border-radius: 3px;
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
@@ -328,12 +335,10 @@ span.logo {
 
 .reviews__content {
     grid-column: 2/-2;
-    -ms-grid-row: 2;
-    grid-row-start: 2;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     z-index: 1;
 }
 
@@ -341,7 +346,7 @@ span.logo {
     -ms-grid-column-align: center;
     justify-self: center;
     color: map-get($colors, grey);
-    width: 60%;
+    width: 70%;
 }
 
 /* SECTION 5 - GALLERY */
@@ -453,7 +458,7 @@ span.logo {
     }
 }
 
-.contact {
+.contact__path-email {
     display: -ms-grid;
     display: grid;
     grid-auto-flow: column;
@@ -461,15 +466,19 @@ span.logo {
     -ms-flex-align: center;
     align-items: center;
     grid-gap: 20px;
-}
-
-.contact__path-email {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
 }
 
 .contact__path-phone {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-gap: 20px;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
@@ -481,7 +490,7 @@ span.logo {
     display: grid;
     -ms-grid-column-align: center;
     justify-self: center;
-    width: 50%;
+    width: calc(100%-100px);
 
     input {
         color: map-get($colors, grey);
@@ -632,6 +641,11 @@ footer {
         justify-self: center;
     }
 
+    #reviews {
+        -ms-grid-columns: 50px 1fr 1fr 1fr 50px;
+        grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    }
+
     .reviews__content {
         grid-column: 1/-1;
     }
@@ -649,12 +663,64 @@ footer {
         grid-column: 1/-1;
     }
 
+    footer p {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu__element a {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #reviews {
+        height: 350px;
+    }
+
+    .features__content {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact__header {
+        margin: 0 50px;
+    }
+
+    .contact__header p {
+        text-align: center;
+    }
+
+    .contact__path {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .contact__path>*:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .contact__path>*:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .contact__path-phone {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+    }
+
     .contact__form {
         width: 80%;
     }
 
-    footer p {
-        margin-right: 50px;
+    .contact__form-content {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -700,6 +766,9 @@ footer {
         grid-template-columns: 1fr;
         -ms-grid-rows: auto 1fr;
         grid-template-rows: auto 1fr;
+        height: 450px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     #reviews>*:nth-child(1) {
@@ -765,42 +834,6 @@ footer {
     }
 
     .features__content {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    }
-
-    .contact__header {
-        margin: 0 50px;
-    }
-
-    .contact__header p {
-        text-align: center;
-    }
-
-    .contact__path {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .contact__path>*:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
-    }
-
-    .contact__path>*:nth-child(2) {
-        -ms-grid-row: 2;
-        -ms-grid-column: 1;
-    }
-
-    .contact__path-phone {
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: start;
-    }
-
-    .contact__form-content {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
