@@ -1,6 +1,6 @@
 const menuBtn = document.querySelector('.menu__icon');
-const menu = document.querySelector('.menu');
-let photo = document.querySelectorAll('.gallery__photo');
+const menu = document.querySelector('.nav__container');
+const photo = document.querySelectorAll('.gallery__photo');
 
 menuBtn.addEventListener('click', function () {
     menu.classList.toggle('hidden');

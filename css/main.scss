@@ -118,27 +118,28 @@ header {
     z-index: 100;
 }
 
-.logo-container {
+.logo {
     word-break: keep-all;
     margin-left: 150px;
-}
 
-h1.logo {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
-    letter-spacing: 2px;
-}
+    h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 60px;
+        letter-spacing: 2px;
+    }
 
-span.logo {
-    font-family: 'Sacramento', cursive;
-    font-size: 40px;
+    span {
+        font-family: 'Sacramento', cursive;
+        font-size: 40px;
+    }
+
 }
 
 .menu__icon {
     display: none;
 }
 
-.menu {
+.nav__container {
     -ms-grid-column-align: end;
     justify-self: end;
     -ms-flex-item-align: center;
@@ -148,7 +149,7 @@ span.logo {
     margin-right: 150px;
 }
 
-.menu__element {
+.nav__element {
     display: inline-block;
 
     a {
@@ -398,7 +399,7 @@ span.logo {
     width: 100%;
 }
 
-.features__content {
+.features__items {
     grid-column: 2/-2;
     display: -ms-grid;
     display: grid;
@@ -537,7 +538,7 @@ footer {
     grid-template-columns: auto 1fr;
     background-color: map-get($colors, black);
 
-    .logo {
+    .logo>* {
         color: white;
         word-break: keep-all;
         margin-bottom: 0;
@@ -561,7 +562,7 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     }
 
-    .logo-container {
+    .logo {
         margin-left: 50px;
     }
 
@@ -580,7 +581,7 @@ footer {
         display: none;
     }
 
-    .menu {
+    .nav__container {
         grid-column: 1/-1;
         margin-right: 0;
         margin: 20px auto;
@@ -655,7 +656,7 @@ footer {
         grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
     }
 
-    .features__content p {
+    .features__items p {
         text-align: center;
     }
 
@@ -669,7 +670,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .menu__element a {
+    .nav__element a {
         padding: 10px;
         font-size: 15px;
     }
@@ -678,7 +679,7 @@ footer {
         height: 350px;
     }
 
-    .features__content {
+    .features__items {
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
@@ -725,16 +726,16 @@ footer {
 }
 
 @media (max-width: 375px) {
-    .logo-container {
+    .logo {
         margin-left: 20px;
-    }
 
-    h1.logo {
-        font-size: 40px;
-    }
+        h1 {
+            font-size: 40px;
+        }
 
-    span.logo {
-        font-size: 30px;
+        span {
+            font-size: 30px;
+        }
     }
 
     .menu__icon {
@@ -742,7 +743,7 @@ footer {
         margin-right: 20px;
     }
 
-    .menu__element a {
+    .nav__element a {
         padding: 5px;
         font-size: 15px;
     }
@@ -833,7 +834,7 @@ footer {
         width: 50%;
     }
 
-    .features__content {
+    .features__items {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }

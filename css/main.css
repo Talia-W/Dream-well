@@ -111,18 +111,16 @@ header {
   z-index: 100;
 }
 
-.logo-container {
+.logo {
   word-break: keep-all;
   margin-left: 150px;
 }
-
-h1.logo {
+.logo h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 60px;
   letter-spacing: 2px;
 }
-
-span.logo {
+.logo span {
   font-family: "Sacramento", cursive;
   font-size: 40px;
 }
@@ -131,7 +129,7 @@ span.logo {
   display: none;
 }
 
-.menu {
+.nav__container {
   -ms-grid-column-align: end;
   justify-self: end;
   -ms-flex-item-align: center;
@@ -141,10 +139,10 @@ span.logo {
   margin-right: 150px;
 }
 
-.menu__element {
+.nav__element {
   display: inline-block;
 }
-.menu__element a {
+.nav__element a {
   font-size: 20px;
   font-weight: 700;
   padding: 20px;
@@ -152,7 +150,7 @@ span.logo {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.menu__element a:hover {
+.nav__element a:hover {
   color: #ffc600;
   cursor: pointer;
 }
@@ -380,7 +378,7 @@ span.logo {
   width: 100%;
 }
 
-.features__content {
+.features__items {
   grid-column: 2/-2;
   display: -ms-grid;
   display: grid;
@@ -391,13 +389,13 @@ span.logo {
   margin: 50px 0;
   z-index: 1;
 }
-.features__content div {
+.features__items div {
   text-align: center;
 }
-.features__content h4 {
+.features__items h4 {
   color: white;
 }
-.features__content p {
+.features__items p {
   color: #c5c5c5;
 }
 
@@ -513,7 +511,7 @@ footer {
   grid-template-columns: auto 1fr;
   background-color: #272727;
 }
-footer .logo {
+footer .logo > * {
   color: white;
   word-break: keep-all;
   margin-bottom: 0;
@@ -535,7 +533,7 @@ footer p {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
 
-  .logo-container {
+  .logo {
     margin-left: 50px;
   }
 
@@ -554,7 +552,7 @@ footer p {
     display: none;
   }
 
-  .menu {
+  .nav__container {
     grid-column: 1/-1;
     margin-right: 0;
     margin: 20px auto;
@@ -625,7 +623,7 @@ footer p {
     grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
   }
 
-  .features__content p {
+  .features__items p {
     text-align: center;
   }
 
@@ -638,7 +636,7 @@ footer p {
   }
 }
 @media (max-width: 600px) {
-  .menu__element a {
+  .nav__element a {
     padding: 10px;
     font-size: 15px;
   }
@@ -647,7 +645,7 @@ footer p {
     height: 350px;
   }
 
-  .features__content {
+  .features__items {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
@@ -693,15 +691,13 @@ footer p {
   }
 }
 @media (max-width: 375px) {
-  .logo-container {
+  .logo {
     margin-left: 20px;
   }
-
-  h1.logo {
+  .logo h1 {
     font-size: 40px;
   }
-
-  span.logo {
+  .logo span {
     font-size: 30px;
   }
 
@@ -710,7 +706,7 @@ footer p {
     margin-right: 20px;
   }
 
-  .menu__element a {
+  .nav__element a {
     padding: 5px;
     font-size: 15px;
   }
@@ -800,7 +796,7 @@ footer p {
     width: 50%;
   }
 
-  .features__content {
+  .features__items {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
