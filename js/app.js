@@ -1,21 +1,16 @@
-const menuBtn = document.querySelector('.menu__icon');
-const menu = document.querySelector('.nav__container');
-const photo = document.querySelectorAll('.gallery__photo');
+const menuBtn = document.querySelector('.menu-button');
+const menuContainer = document.querySelector('.navbar__container');
 
-menuBtn.addEventListener('click', function () {
-    menu.classList.toggle('hidden');
+let menuOpen = false;
 
-    if (menu.classList.contains('hidden')) {
-        menuBtn.src = "images/icons/menu_black.svg";
-        menuBtn.style.width = "30px";
+menuBtn.addEventListener('click', () => {
+    menuContainer.classList.toggle('active');
+
+    if (!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
     } else {
-        menuBtn.src = "images/icons/close_black.svg";
-        menuBtn.style.width = "20px";
+        menuBtn.classList.remove('open');
+        menuOpen = false;
     }
 });
-
-const addPopup = () => {}
-
-const closePopup = () => {}
-
-const resizeImage = () => {}

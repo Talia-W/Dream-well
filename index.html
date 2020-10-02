@@ -11,6 +11,7 @@
     <title>Twoje wymarzone łóżko! | Dream Well</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
+    <script src="js/lightbox-plus-jquery.min.js" defer></script>
 </head>
 
 <body>
@@ -19,14 +20,18 @@
             <div class="logo">
                 <h1>Dream <span>well</span></h1>
             </div>
-            <img src="images/icons/menu_black.svg" class="menu__icon" alt="menu icon">
-            <ul class="nav__container hidden">
-                <li class="nav__element"><a href="#">Home</a></li>
-                <li class="nav__element"><a href="#our-team">Dlaczego My?</a></li>
-                <li class="nav__element"><a href="#projects">Projekty</a></li>
-                <li class="nav__element"><a href="#gallery">Realizacje</a></li>
-                <li class="nav__element"><a href="#contact">Kontakt</a></li>
-            </ul>
+            <div class="menu-button">
+                <span class="menu-button__bar"></span>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar__container">
+                    <li class="navbar__element"><a href="#">Home</a></li>
+                    <li class="navbar__element"><a href="#our-team">Dlaczego My?</a></li>
+                    <li class="navbar__element"><a href="#projects">Projekty</a></li>
+                    <li class="navbar__element"><a href="#gallery">Realizacje</a></li>
+                    <li class="navbar__element"><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
         </header>
         <article id="welcome">
             <div class="welcome__photo">
@@ -189,7 +194,6 @@
 
     </div>
     <script src="js/app.js"></script>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
